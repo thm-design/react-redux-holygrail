@@ -1,0 +1,14 @@
+.timeTravelButtons {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 1.5rem;
+    top: 4rem;
+    z-index: 3;
+}
+
+.timeTravelButtons .button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}

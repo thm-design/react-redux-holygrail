@@ -1,0 +1,115 @@
+.appContainer {
+  display: grid;
+
+  grid-template-areas:
+    "header header"
+    "nav content"
+    "footer footer";
+
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto 1fr;
+  grid-gap: 0px;
+  height: 100vh;
+  padding-top: 2.85714rem;
+}
+
+header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  grid-area: nav;
+}
+
+main {
+  grid-area: content;
+}
+
+footer {
+  grid-area: footer;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-areas:
+      "header"
+      "nav"
+      "content"
+      "footer";
+
+    grid-template-columns: 1fr;
+    grid-template-rows:
+      auto /* Header */
+      minmax(75px, auto) /* Nav */
+      1fr /* Content */
+      auto; /* Footer */
+  }
+
+  nav {
+      z-index: 4;
+      margin: 0;
+      position: fixed;
+      top: 2.85714rem;
+      right: 0;
+      left: 0;
+      bottom: 0;
+  }
+}
+
+/*
+ * End layout
+*/
+
+.sidePanel {
+    border: 1px solid rgb(224, 224, 224);
+    border-right: none;
+    flex: 0 0 30em;
+    transition: margin 0.3s ease;
+    background-color: #d2eeff;
+    display: flex;
+
+}
+
+.sidePanelClosed {
+  margin-left: -30em;
+}
+
+.sidePanelOpen {
+  margin-left: 0;
+}
+
+.panelButton {
+    margin-left: auto;
+    border: none;
+    background-color: transparent;
+    margin-right: 0.6rem;
+}
+
+.panelFooterButtons {
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+}
+
+.mainNav {
+    background: #3088bf;
+    overflow-y: auto;
+}
+
+/*
+ * End app header
+*/
+
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }

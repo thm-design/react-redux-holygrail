@@ -1,0 +1,16 @@
+.appHeader {
+    background: #303233;
+    height: 2.85714rem;
+    position: fixed;
+    width: 100%;
+    z-index: 2000;
+}
+
+.appHeaderBranding {
+    opacity: 0.7;
+    color: #ffffff;
+    display: flex;
+    margin-left: 1rem;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+}

@@ -1,0 +1,14 @@
+.tableContainer {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.table {
+    flex: 1;
+    background-color: #fff;
+    z-index: 2;
+    border-top: 1px solid rgb(224, 224, 224);
+}

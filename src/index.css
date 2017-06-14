@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #6e7487;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+button {
+    cursor: pointer;
+}
+
+:focus {
+    outline: 1px solid rgba(255, 253, 97, 0.4);
+}

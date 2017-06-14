@@ -1,0 +1,14 @@
+.tableHeader {
+    flex: 0 0 auto;
+    display: flex;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.tableHeaderTitle {
+    color: #303233;
+    font-size: 30px;
+    font-weight: 400;
+    padding-left: 1.5rem;
+    margin: 0;
+}
